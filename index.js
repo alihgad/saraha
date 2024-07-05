@@ -5,7 +5,7 @@ import messageRouter from './app/src/moduels/messages/messages.routes.js'
 import connect from './app/DB/connection.js'
 import cors from 'cors'
 const app = express()
-const port = 3000
+const port = process.env.PORT
 
 app.use(cors())
 app.use(express.json())
