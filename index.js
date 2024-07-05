@@ -5,7 +5,9 @@ import messageRouter from './app/src/moduels/messages/messages.routes.js'
 import connect from './app/DB/connection.js'
 import cors from 'cors'
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
+
+connect  // connecting to database
 
 app.use(cors())
 app.use(express.json())
