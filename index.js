@@ -1,13 +1,13 @@
 import express from 'express'
-import userRouter from './app/src/moduels/users/users.routes.js'
-import { ErrorStatus } from './app/src/utils/errorStatus.js'
-import messageRouter from './app/src/moduels/messages/messages.routes.js'
-import connect from './app/DB/connection.js'
+import { ErrorStatus } from './src/app/utils/errorStatus.js'
+import messageRouter from './src/app/moduels/messages/messages.routes.js'
 import cors from 'cors'
+import connect from './src/app/DB/connection.js'
+import userRouter from './src/app/moduels/users/users.routes.js'
 const app = express()
 const port = process.env.PORT || 3000
 
-connect  // connecting to database
+connect()  // connecting to database
 
 app.use(cors())
 app.use(express.json())

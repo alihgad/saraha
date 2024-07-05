@@ -1,5 +1,5 @@
 import errorHandler from './../../utils/errorHandler.js'
-import User from '../../../DB/models/user.model.js'
+import User from '../../DB/models/user.model.js'
 import bcrypt from 'bcrypt'
 import main from '../../services/sendEmail.js'
 import { ErrorStatus } from '../../utils/errorStatus.js'

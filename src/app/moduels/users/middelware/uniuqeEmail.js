@@ -1,4 +1,4 @@
-import User from "../../../../DB/models/user.model.js";
+import User from "../../../DB/models/user.model.js";
 import errorHandler from "../../../utils/errorHandler.js";
 import { ErrorStatus } from "../../../utils/errorStatus.js";
 
